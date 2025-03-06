@@ -4,10 +4,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Link ke website yang ingin diotomatisasi login
-website_link = "https://v-class.gunadarma.ac.id/login/index.php"
+website_link = "...."
 # Username dan password untuk login
-username = "rinaldi14@student.gunadarma.ac.id"
-password = "RINALDIaldi14921"
+username = "...."
+password = "...."
 
 # Elemen untuk input username, password, dan tombol submit
 element_for_username = "username"
@@ -18,7 +18,7 @@ element_for_submit = "btn btn-primary btn-block mt-3"
 browser = webdriver.Chrome()  # Pastikan Anda memiliki ChromeDriver yang sesuai
 browser.get(website_link)
 
-try:
+try: #Silahkan custom elementnya bedasarkan website yang akan digunakan
     # Tunggu hingga elemen username tersedia dan masukkan username
     username_element = WebDriverWait(browser, 10).until(
         EC.presence_of_element_located((By.NAME, element_for_username))
